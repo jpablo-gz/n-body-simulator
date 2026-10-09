@@ -1,0 +1,25 @@
+# Archivos generados por CMake
+/build/
+/build-*/
+/cmake-build-*/
+
+# Archivos compilados
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.dSYM/
+
+# Archivos de macOS
+.DS_Store
+._*
+
+# Archivos temporales del editor
+*.swp
+*.swo
+*~
