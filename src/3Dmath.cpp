@@ -56,11 +56,19 @@ double& Vec::operator[](int index) {
 }
 
 // magnitud:
-double Vec::magnitud(){
+const double Vec::magnitud(){
 	return sqrt(x*x + y*y + z*z + w*w);
 }
 
-// operaciones mas complejas con vectores:
+const Vec Vec::get_2D(){
+	return Vec(x, y, 0, 0);
+}
+
+const Vec Vec::get_3D(){
+	return Vec(x, y, z, 0);
+}
+
+// operaciones mas complejas con vectores --------------------------------------------------
 
 // obtener una copia normalizada del vector original
 Vec normal(const Vec& v){

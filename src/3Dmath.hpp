@@ -24,7 +24,9 @@ public:
 	double& operator[](int index) {}
 
 	// metodos
-	double magnitud(){}
+	const double magnitud(){} // obtener magnitud del vector
+	const Vec get_2D(){} // obtener el vector en su version 2D 
+	const Vec get_3D(){} // obtener el vector en su version 3D
 };
 
 // operaciones complejas con vectores
@@ -32,4 +34,4 @@ Vec normal(const Vec& v){}
 double dot(const Vec& a, const Vec& b){}
 Vec cross(const Vec& a, const Vec& b){}
 
-#endif //MATH3D_HPP
+#endif //MATH3D_H
