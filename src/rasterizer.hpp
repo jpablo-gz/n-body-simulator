@@ -1,13 +1,11 @@
 #ifndef RASTERIZER_HPP
 #define RASTERIZER_HPP
 
-// deben ser flotantes para calculos futuros.
-struct Vec2D{
-    int x;
-    int y;
-};
+// includes:
+#include "3Dmath.hpp"
+#include <SFML/Graphics.hpp>
 
-// debe poner limites de 0 a 255.
+// estructura sencilla para empaquetar colores
 struct Color{
     int r;
     int g;
@@ -15,7 +13,7 @@ struct Color{
 };
 
 // colorear cordenada/pixel en pantalla por algun color
-void putPixel(sf::Image& buffer, Vec2D coords, Color col){
+inline void putPixel(sf::Image& buffer, Vec coords, Color col) {
     const auto size = buffer.getSize();
 
     if (coords.x < 0 || coords.x >= size.x) return;

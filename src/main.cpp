@@ -1,5 +1,6 @@
+// includes:
 #include <SFML/Graphics.hpp>
-#include "Rasterizer.hpp"
+#include "rasterizer.hpp"
 
 int main()
 {
@@ -21,7 +22,7 @@ int main()
     );
 
     // Modificar un píxel de la imagen (ejemplo).
-    Vec2D ubi = {400, 200};
+    Vec ubi = {400, 200};
     Color blanco = {250, 250, 250};
     putPixel(framebuffer, ubi, blanco);
 

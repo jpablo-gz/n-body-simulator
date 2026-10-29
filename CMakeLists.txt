@@ -19,7 +19,8 @@ add_subdirectory(external/SFML-3.1.0)
 add_executable(nbody
     src/main.cpp
     src/3Dmath.cpp
-    src/Rasterizer.cpp
+    src/rasterizer.cpp
+    src/object.cpp
 )
 
 # Utilizar C++17.

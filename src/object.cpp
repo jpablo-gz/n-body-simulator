@@ -1,4 +1,5 @@
-#include "Object.hpp"
+// includes:
+#include "object.hpp"
 
 // clase objeto ----------------------------------------------------------------------------
 Object::Object(Vec p, double r, Vec v){
@@ -28,7 +29,6 @@ double Object::getRadius() const {
 }
 
 // setters:
-
 void Object::setPosition(Vec& p) {
     position = p.get_2D();
 }
