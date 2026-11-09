@@ -1,5 +1,5 @@
-#ifndef MATH3D_H
-#define MATH3D_H
+#ifndef MATH3D_HPP
+#define MATH3D_HPP
 
 // includes:
 #include <iostream>
@@ -35,4 +35,4 @@ Vec normal(const Vec& v);
 double dot(const Vec& a, const Vec& b);
 Vec cross(const Vec& a, const Vec& b);
 
-#endif //MATH3D_H
+#endif //MATH3D_HPP

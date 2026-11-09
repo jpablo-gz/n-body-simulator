@@ -1,5 +1,5 @@
 // includes:
-#include "object.hpp"
+#include "lib/object.hpp"
 
 // clase objeto ----------------------------------------------------------------------------
 Object::Object(Vec p, double r, Vec v){
